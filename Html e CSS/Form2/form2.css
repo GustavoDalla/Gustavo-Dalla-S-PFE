@@ -1,0 +1,139 @@
+header{
+    background-color: white;
+    padding: 20px;
+    position:initial;
+}
+header > img {
+    transform: rotate(90deg);
+}
+body{
+    background-color: hsl(198, 100%, 42%);
+    margin:0px;
+    align-content: flex;
+}
+#nuvem {
+    position: relative;
+    top: -120px;
+    height: 300px;
+    width: 1500px;
+    left: 10px;
+}
+#castelo {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 25px;
+    left: 200px;
+}
+#prancha {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 50px;
+}
+#palmeira {
+    height: 400px;
+    width: 450px;
+    position: relative;
+    left: 500px;
+    top: 10px;
+}
+main {
+    position: relative;
+    left: 200px;
+    background-image: url(imagem/sol.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    top: -100px;
+}
+input {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.793);
+}
+#mensagem {
+    height: 50px;
+    margin-bottom: 50px;
+}
+::placeholder {
+    color: rgba(0, 0, 0, 0.556);
+    font-weight:500;
+    text-align: center;
+    font-family: inputext;
+}
+footer {
+    background-color: #d9b68b;
+}
+.tituloprincipal{
+    position: absolute;
+    top: -10%;
+    left:30%;
+    transform: translate(-10%, 50%);
+    font-size: 80px;
+    color:#ffffff;
+    font-family: fonteocean;
+    font-weight: 200;
+    font-size: 200px;
+    color:rgb(175, 175, 175);
+}
+p{
+    align-self: center;
+}
+form{
+    margin:40px 0;
+}
+form label, form p{
+    display:block;
+    font-size: 20px;
+    margin: 0px 0px 10px;
+    align-self: center;
+}
+.copyright{
+    font-size: 50px;
+    color:#ab906d;
+    text-align: center;
+}
+#logop{
+    border-radius: 10px;
+    width:8%;
+    height: 8%;
+    padding:20px
+}
+.input-padrao{
+    display:block;
+    font-size: 20px;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+main{
+    width:940px;
+    margin: auto;
+}
+.checkbox{
+    margin:20px 0
+}
+.enviar
+{width:40%;
+padding: 15px 0;
+background:#631b8d;
+color:#b8abc0;
+font-weight: bold;
+font-size: 18px;
+border:none;
+border-radius:5px;
+transition:1s all;
+cursor:pointer;
+}
+.enviar:hover{
+    background:#3f115a;
+    transform:scale(1.2);
+}
+@font-face {
+    font-family: 'fonteocean';
+    src: url('fonte/FLOODWATER-NORMAL.otf');
+}
+@font-face {
+    font-family: 'inputext';
+    src: url('fonte/KOMIKAX_.ttf');
+}

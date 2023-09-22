@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Modelo 2</title>
+    <link rel="stylesheet" href="margem.css">
+    <link rel="stylesheet" href="form2.css">
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="imagem/Icone.png">
+      <h1 class="tituloprincipal">Oasis Vacations</h1>
+    </header>
+    <img src="imagem/nuvem.png" alt="Nuvem" id="nuvem">
+    <main>
+      <br>
+      <form>
+        <input type="text" name="nome" id="nomesobrenome" class="input-padrao" placeholder="Nome e Sobrenome" required>
+        <br><br>
+        <input type="text" name="email" id="email" class="input-padrao" placeholder="Email" required>
+        <br><br>
+        <input type="number" name="numero" id="numero" class="input-padrao" placeholder="Número de Telefone" required>
+        <br><br>
+        <input type="text" name="mensagem" id="mensagem" class="input-padrao" placeholder="  Mensagem" required>
+        <section>
+            <p>Como prefere nosso contato?</p>
+            <label for="email">Email</label>
+            <input type="checkbox" name="email" id="checkbox-email" class="input-padrao" placeholder="seuemail@dominio.com" required><br>
+            <label for="numero">Numero</label>
+            <input type="checkbox" name="numero" id="checkbox-numero" class="input-padrao" placeholder="(XX) XXXXX-XXXX" required><br>
+            <label for="numero">Whattszap</label>
+            <input type="checkbox" name="whattszap" id="checkbox-whattszap" class="input-padrao" placeholder="(XX) XXXXX-XXXX" required>
+        </section>
+        <section>
+            <p>Qual horario deseja ser atendido?</p>
+            <select>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </select>
+        </section>
+        <label class="checkbox"><input type="checkbox">Gostaria de receber novidades pelo email?</label>
+        <input type="submit" value="Enviar Formulário" class="enviar">
+      </form>
+    </main>
+    <section>
+        <img src="imagem/prancha.png" alt="Prancha" id="prancha">
+        <img src="imagem/castelo de areia.png" alt="Castelo de Areia" id="castelo">
+        <img src="imagem/palmeira.png" alt="Palmeira" id="palmeira">
+        <footer>
+            <p class="copyright">&copy; Copyright -- GDS</p>
+        </footer>
+    </section>
+  </body>

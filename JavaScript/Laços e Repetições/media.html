@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 21/09/23</title>
+</head>
+<body>
+    <h1>Laços e Repetições</h1>
+    <h2><strong>Media</strong></h2>
+    <p>Nome do aluno</p>
+    <input type="text" name="Nome do Aluno" id="nome"><br>
+    <div id="notas">
+        <p>Nota 1</p>
+        <input type="number" name="1 Trimestre" id="1">
+        <p>Nota 2</p>
+        <input type="number" name="2 Trimestre" id="2">
+        <p>Nota 3</p>
+        <input type="number" name="3 Trimestre" id="3">
+    </div>
+    <input type="button" value="Enter" onclick="clica()">
+    <script>
+        function clica(){
+            var per2 = document.getElementById('nome')
+            var name = String(per2.value)
+            var n1 = window.document.getElementById('1')
+            var n_1 = Number(n1.value) 
+            var n2 = window.document.getElementById('2')
+            var n_2 = Number(n2.value)
+            var n3 = window.document.getElementById('3')
+            var n_3 = Number(n3.value)
+            var media = (n_1+n_2+n_3)/3
+            document.write(`${name} ficou com media de ${media}`)
+        }
+    </script>
+</body>
+</html>

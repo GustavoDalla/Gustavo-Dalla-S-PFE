@@ -1,0 +1,54 @@
+@import url("styles/header.css");
+:root{
+    --cor-de-fundo:rgb(19, 85, 7);
+    --branco:white;
+    --degrade:linear-gradient(rgb(214, 4, 214), rgb(33, 1, 33) ); 
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-size: 16px;
+    font-weight: 400px;
+}
+.cab{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.conteiner{
+    display: flex;
+    align-items: center;
+}
+.conteiner_botao{
+    display:none;
+}
+.cab_menu{
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.conteiner_img{
+    padding: 1em;
+}
+.lista_menu{
+  display: none;
+  position: absolute;
+  top: 90%;
+  background-color: var(--branco);
+  width: 40vw;  
+}
+.lista_menu_tit{
+    color:rgb(247, 139, 6);
+    font-weight: 800px;
+}
+.conteiner_botao:checked~.lista_menu{
+    display: block;
+}
+.lista-menu_titulo, .lista-menu_item{
+    padding: 1em;
+}
