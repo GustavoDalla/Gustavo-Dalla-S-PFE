@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div onclick="clica()" onmouseleave="sai()" onmouseover="entra()" id="texto">Oi</div>
+    <script>
+        function clica(){
+            var p = window.document.getElementById('texto')
+            p.innerHTML = "Ai"
+            p.style.background = 'red'
+            p.style.color = 'white'
+        }
+        function sai(){
+            var p = window.document.getElementById('texto')
+            p.innerHTML = "Ufa"
+            p.style.background = 'green'
+            p.style.color = 'white'
+        }
+        function entra(){
+            var p = window.document.getElementById('texto')
+            p.innerHTML = "Tira o mouse vagabundo"
+            p.style.background = 'blue'
+            p.style.color = 'white'
+        }
+    </script>
+</body>
+</html>
