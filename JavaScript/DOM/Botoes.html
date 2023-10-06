@@ -34,27 +34,56 @@
 <body>
     <header id="cab">
         <nav id="nav">
-            <Button id="b1" class="b" onmouseenter="entra()" onmouseleave="sai()"><a href="">knoppie</a></Button>
-            <Button id="b2" class="b" onmouseenter="entra()" onmouseleave="sai()"><a href="">баскыч</a></Button>
-            <button id="b3" class="b" onmouseenter="entra()" onmouseleave="sai()"><a href="">κουμπί</a></button>
+            <Button id="b1" class="b" onmouseenter="alteraCor('b1')" onmouseleave="restauraCor('b1')"><a href="">knoppie</a></Button>
+            <Button id="b2" class="b" onmouseenter="alteraCor('b2')" onmouseleave="restauraCor('b2')"><a href="">баскыч</a></Button>
+            <button id="b3" class="b" onmouseenter="alteraCor('b3')" onmouseleave="restauraCor('b3')"><a href="">κουμπί</a></button>
         </nav>
     </header>
     <script>
-        var cab = window.document.getElementById('cab')
-        var b1 = window.document.getElementById('b1')
-        var b2 = window.document.getElementById('b2')
-        var b3 = window.document.getElementById('b3')
-        var b = window.document.getElementsByClassName('b')[0]
-        function entra(){
-            b1.style.background = 'blue'
-            b2.style.background = 'purple'
-            b3.style.background = 'green'
-        }
-        function sai(){
-            b1.style.background = 'tomato'
-            b2.style.background = 'tomato'
-            b3.style.background = 'tomato'
-        }
+    function alteraCor(botaoId) {
+    // Declaração de uma função chamada 'alteraCor' que aceita um argumento chamado 'botaoId'.
+    // Essa função será usada para alterar a cor de fundo do botão quando o mouse entrar nele.
+
+    var botao = document.getElementById(botaoId);
+    // Declaração de uma variável chamada 'botao' que armazena uma referência a um elemento HTML.
+    // Essa referência é obtida usando 'document.getElementById(botaoId)', onde 'botaoId' é o ID passado como argumento.
+
+    if (botaoId === 'b1') {
+        // Verifica se o valor de 'botaoId' é igual a 'b1' (o ID do primeiro botão).
+        // Se for igual, o código dentro deste bloco será executado.
+
+        botao.style.background = 'blue';
+        // Define a cor de fundo do elemento 'botao' como 'blue' (azul).
+        // Isso faz com que o botão fique azul quando o mouse entra sobre ele.
+    } else if (botaoId === 'b2') {
+        // Se o valor de 'botaoId' não for igual a 'b1', então verifica se é igual a 'b2' (o ID do segundo botão).
+        // Se for igual, o código dentro deste bloco será executado.
+
+        botao.style.background = 'purple';
+        // Define a cor de fundo do elemento 'botao' como 'purple' (roxo).
+        // Isso faz com que o botão fique roxo quando o mouse entra sobre ele.
+    } else if (botaoId === 'b3') {
+        // Se o valor de 'botaoId' não for igual a 'b1' ou 'b2', então verifica se é igual a 'b3' (o ID do terceiro botão).
+        // Se for igual, o código dentro deste bloco será executado.
+
+        botao.style.background = 'green';
+        // Define a cor de fundo do elemento 'botao' como 'green' (verde).
+        // Isso faz com que o botão fique verde quando o mouse entra sobre ele.
+    }
+}
+    function restauraCor(botaoId) {
+    // Declaração de uma função chamada 'restauraCor' que aceita um argumento chamado 'botaoId'.
+    // Essa função será usada para restaurar a cor original de fundo do botão quando o mouse sair dele.
+
+    var botao = document.getElementById(botaoId);
+    // Declaração de uma variável chamada 'botao' que armazena uma referência a um elemento HTML.
+    // Essa referência é obtida usando 'document.getElementById(botaoId)', onde 'botaoId' é o ID passado como argumento.
+
+    botao.style.background = 'tomato';
+    // Define a cor de fundo do elemento 'botao' como 'tomato' (vermelho, a cor original).
+    // Isso restaura a cor original do botão quando o mouse sai dele.
+}
+
     </script>
 </body>
 </html>
