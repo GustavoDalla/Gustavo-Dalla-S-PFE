@@ -1,2 +1,2 @@
-# EfeitosSonorosRadioGremio
-Mesa de mídias com áudios para efeitos sonoros especiais da rádio Grêmio Estudantil
+# EfeitosSonoros
+Mesa de mídias com áudios para efeitos sonoros especiais
