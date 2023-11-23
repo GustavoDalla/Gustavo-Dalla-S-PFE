@@ -4,5 +4,5 @@
 2. Clique no bau para selecionar um cd;
   2.1 Clique no cd e depois na jukebox (icone do meio);
   2.2 Para tirar clique novamente na jukebox ou no cd;
-3. Você pode tocar musicas e ao mesmo tempo tocar os sons;
-4. Clique no slime para uma animação interativa.
+4. Você pode tocar musicas e ao mesmo tempo tocar os sons;
+5. Clique no slime para uma animação interativa.
