@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco Musical</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <script src="js/som.js"></script>
+    <script src="js/efeito-nota.js"></script>
+</head>
+
+<body>
+    <main>
+        <div id="particles-js">
+            <div id="botoes" class="princ">
+                <button class="tecla tecla_abobora" onclick="tocaSom(); showNoteEffect(event)"><img src="img/blocos/abobora.png" alt="abobora"></button>
+                <button class="tecla tecla_areia" onclick="tocaSom(); showNoteEffect(event)"><img src="img/blocos/areia.png" alt="areia"></button>
+                <button class="tecla tecla_areiaalma" onclick="tocaSom(); showNoteEffect(event)"><img src="img/blocos/areiaalma.png" alt="areiaalma"></button>
+                <button class="tecla tecla_la" onclick="tocaSom(); showNoteEffect(event)"><img src="img/blocos/la.png" alt="bedrock"></button>
+                <button class="tecla tecla_musica" onclick="jukeboxtoca()"><img src="img/botoes/jukebox.png" alt="jukebox"></button>
+                <button class="tecla tecla_ferro" onclick="tocaSom(); showNoteEffect(event)"><img src="img/blocos/ferro.png" alt="bedrock"></button>
+                <button class="tecla tecla_ouro" onclick="tocaSom(); showNoteEffect(event)"><img src="img/blocos/ouro.png" alt="esmeralda"></button>
+                <button class="tecla tecla_lampada" onclick="tocaSom(); showNoteEffect(event)"><img src="img/blocos/lampada.png" alt="lampada"></button>
+                <button class="tecla tecla_feno" onclick="tocaSom(); showNoteEffect(event)"><img src="img/blocos/feno.png" alt="feno"></button>
+            </div>
+        </div>
+        <div>
+            <button onclick="bau()" id="bau"><img src="img/botoes/bau.png" alt="bau" class="tecla tecla_bau"></button>
+            <div id="bauinv">
+                <img src="img/botoes/bauinv.png" alt="bauinv">
+                <div id="cd">
+                    <button class="cdb cat" onclick="pegacd(this)"><img src="musicas/capas/cat.png" alt="cd"></button>
+                    <audio src="musicas/cat.mp3" id="musica_cat"></audio>
+                    <button class="cdb chirp" onclick="pegacd(this)"><img src="musicas/capas/chirp.png" alt="cd"></button>
+                    <audio src="musicas/chirp.mp3" id="musica_chirp"></audio>
+                    <button class="cdb far" onclick="pegacd(this)"><img src="musicas/capas/far.png" alt="cd"></button>
+                    <audio src="musicas/far.mp3" id="musica_far"></audio>
+                    <button class="cdb pigstep" onclick="pegacd(this)"><img src="musicas/capas/pigstep.png" alt="cd"></button>
+                    <audio src="musicas/pigstep.mp3" id="musica_pigstep"></audio>
+                </div>
+            </div>
+        </div>
+        <div id="slime">
+            <img src="img/slime.png" alt="slime" class="jello-horizontal" onclick="slime()">
+            <audio src="sons/slime.mp3" id="som_slime"></audio>
+        </div>
+        <audio src="sons/baufechando.mp3" id="som_baufechando"></audio>
+        <audio src="sons/bauabrindo.mp3" id="som_bauabrindo"></audio>
+        <audio src="sons/drop.mp3" id="som_drop"></audio>
+        <audio src="sons/abobora.mp3" id="som_tecla_abobora"></audio>
+        <audio src="sons/areia.mp3" id="som_tecla_areia"></audio>
+        <audio src="sons/areiaalma.mp3" id="som_tecla_areiaalma"></audio>
+        <audio src="sons/la.mp3" id="som_tecla_la"></audio>
+        <audio src="sons/ferro.mp3" id="som_tecla_ferro"></audio>
+        <audio src="sons/ouro.mp3" id="som_tecla_ouro"></audio>
+        <audio src="sons/lampada.mp3" id="som_tecla_lampada"></audio>
+        <audio src="sons/feno.mp3" id="som_tecla_feno"></audio>
+    </main>
+    <footer>
+        <div>
+            <img src="img/placa.png" alt="placa" id="placa">
+            <p id="txtfooter">
+                Gustavo 
+                Dallabrida 
+                Stahnke =)
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

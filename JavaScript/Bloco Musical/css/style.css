@@ -1,0 +1,195 @@
+body {
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+#botoes {
+    height: 50px;
+    width: 50px;
+}
+#bau:hover{
+    cursor: pointer;
+}
+#bauinv {
+    display: none;
+    position: relative;
+}
+#cd {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#slime{
+    height: 100px;
+    width: 100px;
+}
+#placa{
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+#txtfooter{
+    color: white;
+    font-family: mine;
+    font-size: xx-large;
+    position: absolute;
+    bottom: 110px;
+    right: 150px;
+    line-height: 1.5;
+    white-space: pre;
+}
+.cdb {
+    height: 79px;
+    width: 79px;
+    display: inline-block;
+}
+.cd-aberto{
+    height: 79px;
+    width: 79px;
+    display: inline;
+}
+.cd-aberto:hover{
+    cursor: pointer;
+}
+.princ {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    z-index: 5;
+}
+.tecla {
+    cursor: pointer;
+}
+.note-effect {
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    background-size: cover;
+    pointer-events: none;
+    opacity: 1;
+    z-index: 10;
+}
+@font-face {
+    font-family: mine;
+    src: url(../fonte/Minecraft.ttf);
+}
+@keyframes moveUpAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(-5px);
+    }
+    20% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    70% {
+        transform: translateY(-30px);
+    }
+    80% {
+        transform: translateY(-40px);
+    }
+    90% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(-60px);
+        opacity: 1;
+    }
+}
+.note-effect.move-up {
+    animation: moveUpAnimation 0.5s ease-out;
+}
+.note-effect.move-up-hidden {
+    opacity: 0;
+    pointer-events: none;
+    animation: none; /* Remove a animação após a primeira execução */
+}
+#slime.jello-horizontal{
+    -webkit-animation: jello-horizontal 0.9s ease-in both;
+    animation: jello-horizontal 0.9s ease-in both;
+    cursor: pointer;
+}
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
