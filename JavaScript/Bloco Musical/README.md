@@ -4,9 +4,9 @@
 
 2. Clique no bau para selecionar um cd;
 
-   2.1 Clique no cd e depois na jukebox (icone do meio);
+      2.1 Clique no cd e depois na jukebox (icone do meio);
 
-   2.2 Para tirar clique novamente na jukebox ou no cd;
+      2.2 Para tirar clique novamente na jukebox ou no cd;
 
 4. Você pode tocar musicas e ao mesmo tempo tocar os sons;
 
